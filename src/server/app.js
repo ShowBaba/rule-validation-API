@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
     status: "success",
     data: {
       name: "Shoyemi Samuel Segun",
-      github: "https://github.com/ShowBaba",
+      github: "@ShowBaba",
       email: "samwise858@gmail.com",
       mobile: "08168135297",
       twitter: "@samshandle_",
