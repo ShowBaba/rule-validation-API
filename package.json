@@ -8,8 +8,13 @@
     "dev": "nodemon ./src/bin/www",
     "test": "npm test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShowBaba/rule-validation-API"
+  },
   "author": "Samuel Shoyemi",
   "license": "MIT",
+  "homepage": "https://github.com/ShowBaba/rule-validation-API.git#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
