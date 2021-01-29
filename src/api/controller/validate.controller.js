@@ -1,8 +1,6 @@
-const { object } = require("joi");
 const validatorUtil = require("../../utils/validation-util");
 
 // TODO: validate input to be JSON before passing to validator utility
-// TODO: Handle: [PS: For the error responses described above, please note that the punctuation is important. I.e the period at the end of each error message.]
 module.exports = {
   validateRule: async (req, res, next) => {
     const input = req.body;
@@ -50,18 +48,14 @@ module.exports = {
                     field_value: req.body["data"][req.body.rule.field],
                     condition: req.body.rule.condition,
                     condition_value: req.body.rule.condition_value,
-                  },
+                  },         
                 },
               });
             }
           }
         }
     } catch (error) {
-      res.status(400).json({
-        message: "Invalid JSON payload passed.",
-        status: "error",
-        data: null,
-      });
+      next()
     }
   },
 };
