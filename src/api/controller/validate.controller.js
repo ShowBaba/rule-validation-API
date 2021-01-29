@@ -1,13 +1,12 @@
 const validatorUtil = require("../../utils/validation-util");
 
-// TODO: validate input to be JSON before passing to validator utility
 module.exports = {
   validateRule: async (req, res, next) => {
     const input = req.body;
     const isJson = input instanceof Object ? true : false;
     try {
         const result = await validatorUtil.validateBody(input);
-        if (result !== true) {
+      if (result !== true) {
           const error = validatorUtil.formatValidationError(result);
           return res.status(400).send(error);
         } else {

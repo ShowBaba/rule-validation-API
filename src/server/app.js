@@ -5,6 +5,7 @@ const logger = require("morgan");
 var bodyParser = require("body-parser");
 const cors = require("cors");
 
+// routes
 const validateRouter = require("../api/routes/validate.route");
 
 const app = express();
