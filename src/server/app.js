@@ -23,8 +23,8 @@ app.get("/", (req, res) => {
     message: "My Rule-Validation API",
     status: "success",
     data: {
-      name: "Shoyemi Samuel",
-      github: "@ShowBaba",
+      name: "Shoyemi Samuel Segun",
+      github: "https://github.com/ShowBaba",
       email: "samwise858@gmail.com",
       mobile: "08168135297",
       twitter: "@samshandle_",
