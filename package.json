@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./src/bin/www",
     "dev": "nodemon ./src/bin/www",
-    "test": "npm test"
+    "test": "mocha tests/* --timeout 100000 --exit"
   },
   "repository": {
     "type": "git",
@@ -17,11 +17,14 @@
   "homepage": "https://github.com/ShowBaba/rule-validation-API.git#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-validator": "^6.9.2",
     "http-error": "0.0.6",
+    "mocha": "^8.2.1",
     "morgan": "^1.10.0",
     "node-input-validator": "^4.3.2"
   },

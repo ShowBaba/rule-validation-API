@@ -17,6 +17,10 @@
 - [x] morgan
 - [x] node-input-validator
 
+## **:package: Testing tools used**
+- [x] mocha
+- [x] chai
+
 ---
 
 ## **:wrench: Developer usage**
@@ -53,6 +57,16 @@ npm start
 
 ```bash
 npm run dev
+```
+
+---
+
+---
+
+### Test
+
+```bash
+npm test
 ```
 
 ---
